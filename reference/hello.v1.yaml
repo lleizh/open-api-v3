@@ -2,6 +2,9 @@ openapi: 3.0.0
 info:
   title: hello
   version: '1.0'
+  description: first api
+  contact:
+    name: zhang leilei
 servers:
   - url: 'http://localhost:3000'
 paths:
@@ -19,6 +22,7 @@ paths:
                 items:
                   $ref: '#/components/schemas/User'
       description: get users
+      operationId: get_users
 components:
   schemas:
     User:
